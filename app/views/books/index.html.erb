@@ -2,7 +2,7 @@
 
 <h1>Listing Books</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -20,7 +20,7 @@
         <td><%= book.name %></td>
         <td><%= book.author %></td>
         <td><%= book.description %></td>
-        <td><%= book.price %></td>
+        <td>$<%= book.price %></td>
         <td><%= book.availability %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
